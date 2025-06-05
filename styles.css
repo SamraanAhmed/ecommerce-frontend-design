@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+/* Header */
+.main-page-sec {
+  max-width: 1440px;
+}
+.header-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 150px;
+  height: 46px;
+}
+
+.search {
+  display: flex;
+  flex-grow: 1;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-right: none;
+  border: 2px solid #0d6efd;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+}
+
+.search select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border: 2px solid #0d6efd;
+  border-left: none;
+  border-right: none;
+}
+
+.search .search-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0 10px 10px 0;
+}
+
+.header-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-items li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.header-items ul li span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8b96a5;
+}
+.header-items i {
+  font-size: 20px;
+  margin-bottom: 4px;
+  color: #8b96a5;
+}
+
+/* Navigation Bar */
+.navbar-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.navbar-sec-left ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar-sec-left li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.navbar-sec-left #help-select,
+#payment-select,
+#ship-select {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding-left: 0%;
+}
+.navbar-sec-left li:hover {
+  color: #007bff;
+}
+
+.navbar-sec-left select,
+.payment select,
+.ship-to select {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.navbar-sec-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.payment,
+.ship-to {
+  display: flex;
+  align-items: center;
+}
+
+.payment i,
+.ship-to i {
+  margin-right: 0.5rem;
+  color: #666;
+}
+
+/* Main Section */
+
+.main-sec {
+  max-width: 1180px;
+  min-width: 1180px;
+  height: 400px;
+  background-color: #dee2e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-sec .main-sec-left {
+  width: 250px;
+  height: 360px;
+  background-color: #fff;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+}
+.main-sec .main-sec-left .main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-sec .main-sec-left .main-menu ul li {
+  padding: 10px;
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.main-sec .main-sec-mid {
+  width: 665px;
+  height: 360px;
+}
+.main-sec .main-sec-right {
+  width: 200px;
+  height: auto;
+}
+.main-sec .main-sec-right .register-box {
+  width: 200px;
+  height: 150px;
+  background-color: #e3f0ff;
+  border: none;
+  border-radius: 6px;
+}
+.main-sec .main-sec-right .offer-card {
+  width: 200px;
+  height: 95px;
+  background-color: #e3f0ff;
+  border: none;
+  border-radius: 6px;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+.main-sec .main-sec-right .offer-card span {
+  max-width: 57px;
+  color: #fff;
+}
+.main-sec .main-sec-right .offer-card-1 {
+  background-color: #55bdc3;
+}
+.main-sec .main-sec-right .offer-card-2 {
+  background-color: #f38332;
+}

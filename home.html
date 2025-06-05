@@ -4,20 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="main-page-sec">
-        <section class="header-sec"></section>
-        <section class="navbar-sec"></section>
-        <section class="main-sec"></section>
-        <section class="sale-sec"></section>
-        <section class="block-items-group-sec"></section>
-        <section class="block-items-group-sec"></section>
-        <section class="recommendation-sec"></section>
-        <section class="service-sec"></section>
-        <section class="country-sec"></section>
-        <section class="news-letter-sec"></section>
-        <section class="footer-sec"></section>
+        <header class="header-sec">
+            <div class="logo">
+                <img src="Components/Brand/logo-colored.svg" alt="Company Logo">
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <select name="allCategories" id="category-select">
+                    <option value="1">All Categories</option>
+                    <option value="2">Kids</option>
+                    <option value="3">Men</option>
+                    <option value="4">Women</option>
+                </select>
+                <button class="search-btn">Search</button>
+            </div>
+
+            <div class="header-items">
+                <ul class="header-item-list">
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Wishlist</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-message"></i>
+                        <span>Notifications</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>My Cart</span>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="navbar-sec">
+            <div class="navbar-sec-left">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-bars"></i>
+                        <span>All Categories</span>
+                    </li>
+                    <li>Hot Offers</li>
+                    <li>Gift Boxes</li>
+                    <li>Projects</li>
+                    <li>Menu item</li>
+                    <li>
+                        <select name="help" id="help-select">
+                            <option value="1">Help</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-sec-right">
+                <div class="payment">
+                    <select name="payment" id="payment-select">
+                        <option value="1">English, USD</option>
+                        <option value="2">English, EUR</option>
+                        <option value="3">English, PKR</option>
+                    </select>
+                </div>
+                <div class="ship-to">
+                    <select name="shipTo" id="ship-select">
+                        <option value="1">Ship to: USA</option>
+                        <option value="2">Ship to: UK</option>
+                        <option value="3">Ship to: Canada</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section class="main-sec">
+            <div class="main-sec-left">
+                <div class="main-menu">
+                    <ul>
+                        <li>Automobiles</li>
+                        <li>Clothes and wear</li>
+                        <li>Home interiors</li>
+                        <li>Computer and tech</li>
+                        <li>Tools, equipments</li>
+                        <li>Sports and outdoor</li>
+                        <li>Animal and pets</li>
+                        <li>Machinery tools</li>
+                        <li>More category</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-sec-mid">
+                <img src="Components/banner.png" alt="Banner Image">
+            </div>
+            <div class="main-sec-right">
+                <div class="register-box" ></div>
+                <div class="offer-card-1 offer-card" >
+                  <span>Get US $10 off with a new supplier</span>
+                </div>
+                <div class="offer-card-2 offer-card" >
+                  <span>Send quotes with supplier preferences</span>
+                </div>
+            </div>
+        </section>
+        <section class="sale-sec">
+            <!-- Content for sale-sec goes here -->
+        </section>
+        <section class="block-items-group-sec">
+            <!-- Content for block-items-group-sec goes here -->
+        </section>
+        <section class="block-items-group-sec">
+            <!-- Content for block-items-group-sec goes here -->
+        </section>
+        <section class="recommendation-sec">
+            <!-- Content for recommendation-sec goes here -->
+        </section>
+        <section class="service-sec">
+            <!-- Content for service-sec goes here -->
+        </section>
+        <section class="country-sec">
+            <!-- Content for country-sec goes here -->
+        </section>
+        <section class="news-letter-sec">
+            <!-- Content for news-letter-sec goes here -->
+        </section>
+        <section class="footer-sec">
+            <!-- Content for footer-sec goes here -->
+        </section>
     </div>
 </body>
 </html>
