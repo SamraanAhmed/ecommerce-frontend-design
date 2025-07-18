@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined View</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="Components/CSS/listAndgrid.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-top">
+      <div class="container header-top-container">
+                <a href="home.html" class="logo-link">
+          <div class="logo-container">
+            <i class="fas fa-shopping-bag"></i>
+            <span>Brand</span>
+          </div>
+        </a>
+        <form class="search-form">
+          <input type="text" placeholder="Search" class="search-input">
+          <div class="search-category-select">
+            <span>All category</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <button type="submit" class="search-button">Search</button>
+        </form>
+        <div class="header-actions">
+                    <a href="#" class="action-item">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+          </a>
+          <a href="#" class="action-item">
+            <i class="fas fa-envelope"></i>
+            <span>Message</span>
+          </a>
+          <a href="#" class="action-item">
+            <i class="fas fa-box"></i>
+            <span>Orders</span>
+          </a>
+          <a href="cart.html" class="action-item">
+            <i class="fas fa-shopping-cart"></i>
+            <span>My cart</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container header-bottom-container">
+        <nav class="main-nav">
+          <ul>
+                        <li><a href="listAndgrid.html"><i class="fas fa-bars"></i> All category</a></li>
+            <li><a href="listAndgrid.html">Hot offers</a></li>
+            <li><a href="#">Gift boxes</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Help <i class="fas fa-chevron-down"></i></a></li>
+          </ul>
+        </nav>
+        <div class="header-settings">
+          <div class="setting-item">
+            <span>English, USD</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="setting-item">
+            <span>Ship to</span>
+            <img src="Images/AE@2x.png" alt="DE flag" class="flag-icon">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb-list">
+                          <li><a href="home.html">Home</a></li>
+            <li><i class="fas fa-chevron-right"></i></li>
+                          <li><a href="listAndgrid.html">Clothings</a></li>
+            <li><i class="fas fa-chevron-right"></i></li>
+            <li><a href="#">Men’s wear</a></li>
+            <li><i class="fas fa-chevron-right"></i></li>
+            <li class="active" aria-current="page">Summer clothing</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main-content">
+    <div class="container page-content">
+      <aside class="sidebar">
+        <div class="filter-group">
+          <button class="filter-toggle">Category <i class="fas fa-chevron-down"></i></button>
+          <div class="filter-options">
+            <a href="#" class="filter-option">Mobile accessory</a>
+            <a href="#" class="filter-option">Electronics</a>
+            <a href="#" class="filter-option">Smartphones</a>
+            <a href="#" class="filter-option">Modern tech</a>
+            <a href="#" class="filter-option see-all">See all</a>
+          </div>
+        </div>
+        <div class="filter-group">
+          <button class="filter-toggle">Brands <i class="fas fa-chevron-down"></i></button>
+          <div class="filter-options">
+            <label class="checkbox-label"><input type="checkbox" checked> Samsung</label>
+            <label class="checkbox-label"><input type="checkbox" checked> Apple</label>
+            <label class="checkbox-label"><input type="checkbox"> Huawei</label>
+            <label class="checkbox-label"><input type="checkbox" checked> Pocco</label>
+            <label class="checkbox-label"><input type="checkbox"> Lenovo</label>
+            <a href="#" class="filter-option see-all">See all</a>
+          </div>
+        </div>
+        <div class="filter-group">
+          <button class="filter-toggle">Features <i class="fas fa-chevron-down"></i></button>
+          <div class="filter-options">
+            <label class="checkbox-label"><input type="checkbox" checked> Metallic</label>
+            <label class="checkbox-label"><input type="checkbox"> Plastic cover</label>
+            <label class="checkbox-label"><input type="checkbox"> 8GB Ram</label>
+            <label class="checkbox-label"><input type="checkbox"> Super power</label>
+            <label class="checkbox-label"><input type="checkbox"> Large Memory</label>
+            <a href="#" class="filter-option see-all">See all</a>
+          </div>
+        </div>
+        <div class="filter-group">
+          <button class="filter-toggle">Price range <i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="filter-group">
+          <button class="filter-toggle">Condition <i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="filter-group">
+          <button class="filter-toggle">Ratings <i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="filter-group">
+          <button class="filter-toggle">Manufacturer <i class="fas fa-chevron-down"></i></button>
+        </div>
+      </aside>
+            <div class="content-area">
+        <button class="filter-toggle-mobile" onclick="toggleSidebar()" style="display: none;">
+          <i class="fas fa-filter"></i> Filters
+        </button>
+        <div class="toolbar">
+          <p class="item-count">12,911 items in <strong>Mobile accessory</strong></p>
+          <div class="toolbar-actions">
+            <label class="checkbox-label"><input type="checkbox"> Verified only</label>
+            <div class="custom-select">
+              <span>Featured</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="view-toggle">
+              <button id="grid-view-button" class="active"><i class="fas fa-th"></i></button>
+              <button id="list-view-button"><i class="fas fa-list"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="applied-filters">
+          <span class="filter-tag">Samsung <i class="fas fa-times"></i></span>
+          <span class="filter-tag">Apple <i class="fas fa-times"></i></span>
+          <span class="filter-tag">Poco <i class="fas fa-times"></i></span>
+          <span class="filter-tag">Metallic <i class="fas fa-times"></i></span>
+          <span class="filter-tag">4 star <i class="fas fa-times"></i></span>
+          <span class="filter-tag">3 star <i class="fas fa-times"></i></span>
+          <a href="#" class="clear-all-filters">Clear all filter</a>
+        </div>
+        <div id="grid-view" class="product-grid">
+                    <div class="product-card">
+            <a href="details.html">
+              <div class="product-image-container">
+                <img src="Components/Image/tech/2.jpg" alt="Product 1" class="product-image">
+              </div>
+              <div class="product-info">
+              <div class="product-price-section">
+                <div>
+                  <span class="price-current">$99.50</span>
+                  <span class="price-old">$1128.00</span>
+                </div>
+                <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <span class="rating-value">7.5</span>
+              </div>
+                            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+            </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="Components/Image/tech/2.jpg" alt="Product 2" class="product-image">
+            </div>
+            <div class="product-info">
+              <div class="product-price-section">
+                <div>
+                  <span class="price-current">$99.50</span>
+                  <span class="price-old">$1128.00</span>
+                </div>
+                <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <span class="rating-value">7.5</span>
+              </div>
+                            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+            </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="Components/Image/tech/2.jpg" alt="Product 3" class="product-image">
+            </div>
+            <div class="product-info">
+              <div class="product-price-section">
+                <div>
+                  <span class="price-current">$99.50</span>
+                  <span class="price-old">$1128.00</span>
+                </div>
+                <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <span class="rating-value">7.5</span>
+              </div>
+                            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+            </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="Components/Image/tech/2.jpg" alt="Product 4" class="product-image">
+            </div>
+            <div class="product-info">
+              <div class="product-price-section">
+                <div>
+                  <span class="price-current">$99.50</span>
+                  <span class="price-old">$1128.00</span>
+                </div>
+                <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <span class="rating-value">7.5</span>
+              </div>
+                            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+            </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="Components/Image/tech/2.jpg" alt="Product 5" class="product-image">
+            </div>
+            <div class="product-info">
+              <div class="product-price-section">
+                <div>
+                  <span class="price-current">$99.50</span>
+                  <span class="price-old">$1128.00</span>
+                </div>
+                <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <span class="rating-value">7.5</span>
+              </div>
+                            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+            </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="Components/Image/tech/2.jpg" alt="Product 6" class="product-image">
+            </div>
+            <div class="product-info">
+              <div class="product-price-section">
+                <div>
+                  <span class="price-current">$99.50</span>
+                  <span class="price-old">$1128.00</span>
+                </div>
+                <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <span class="rating-value">7.5</span>
+              </div>
+                            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div id="list-view" class="product-list">
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="Components/Image/tech/2.jpg" alt="Product 1" class="product-image">
+            </div>
+            <div class="product-details">
+              <h4 class="product-title">Canon Camera EOS 2000, Black 10x zoom</h4>
+              <div class="product-price">
+                <span class="price-current">$998.00</span>
+                <span class="price-old">$1128.00</span>
+              </div>
+              <div class="product-meta">
+                <i class="fas fa-star"></i>
+                <span class="rating-value">7.5</span>
+                <span class="dot"></span>
+                <span class="orders">154 orders</span>
+                <span class="dot"></span>
+                <span class="shipping">Free Shipping</span>
+              </div>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="details.html" class="view-details-link">View details</a>
+            </div>
+            <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+          </article>
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="Components/Image/tech/2.jpg" alt="Product 2" class="product-image">
+            </div>
+            <div class="product-details">
+              <h4 class="product-title">Canon Camera EOS 2000, Black 10x zoom</h4>
+              <div class="product-price">
+                <span class="price-current">$998.00</span>
+                <span class="price-old">$1128.00</span>
+              </div>
+              <div class="product-meta">
+                <i class="fas fa-star"></i>
+                <span class="rating-value">7.5</span>
+                <span class="dot"></span>
+                <span class="orders">154 orders</span>
+                <span class="dot"></span>
+                <span class="shipping">Free Shipping</span>
+              </div>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="details.html" class="view-details-link">View details</a>
+            </div>
+            <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+          </article>
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="Components/Image/tech/2.jpg" alt="Product 3" class="product-image">
+            </div>
+            <div class="product-details">
+              <h4 class="product-title">Canon Camera EOS 2000, Black 10x zoom</h4>
+              <div class="product-price">
+                <span class="price-current">$998.00</span>
+                <span class="price-old">$1128.00</span>
+              </div>
+              <div class="product-meta">
+                <i class="fas fa-star"></i>
+                <span class="rating-value">7.5</span>
+                <span class="dot"></span>
+                <span class="orders">154 orders</span>
+                <span class="dot"></span>
+                <span class="shipping">Free Shipping</span>
+              </div>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="details.html" class="view-details-link">View details</a>
+            </div>
+            <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+          </article>
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="Components/Image/tech/2.jpg" alt="Product 4" class="product-image">
+            </div>
+            <div class="product-details">
+              <h4 class="product-title">Canon Camera EOS 2000, Black 10x zoom</h4>
+              <div class="product-price">
+                <span class="price-current">$998.00</span>
+                <span class="price-old">$1128.00</span>
+              </div>
+              <div class="product-meta">
+                <i class="fas fa-star"></i>
+                <span class="rating-value">7.5</span>
+                <span class="dot"></span>
+                <span class="orders">154 orders</span>
+                <span class="dot"></span>
+                <span class="shipping">Free Shipping</span>
+              </div>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="details.html" class="view-details-link">View details</a>
+            </div>
+            <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+          </article>
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="Components/Image/tech/2.jpg" alt="Product 5" class="product-image">
+            </div>
+            <div class="product-details">
+              <h4 class="product-title">Canon Camera EOS 2000, Black 10x zoom</h4>
+              <div class="product-price">
+                <span class="price-current">$998.00</span>
+                <span class="price-old">$1128.00</span>
+              </div>
+              <div class="product-meta">
+                <i class="fas fa-star"></i>
+                <span class="rating-value">7.5</span>
+                <span class="dot"></span>
+                <span class="orders">154 orders</span>
+                <span class="dot"></span>
+                <span class="shipping">Free Shipping</span>
+              </div>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="details.html" class="view-details-link">View details</a>
+            </div>
+            <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+          </article>
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="Components/Image/tech/2.jpg" alt="Product 6" class="product-image">
+            </div>
+            <div class="product-details">
+              <h4 class="product-title">Canon Camera EOS 2000, Black 10x zoom</h4>
+              <div class="product-price">
+                <span class="price-current">$998.00</span>
+                <span class="price-old">$1128.00</span>
+              </div>
+              <div class="product-meta">
+                <i class="fas fa-star"></i>
+                <span class="rating-value">7.5</span>
+                <span class="dot"></span>
+                <span class="orders">154 orders</span>
+                <span class="dot"></span>
+                <span class="shipping">Free Shipping</span>
+              </div>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="details.html" class="view-details-link">View details</a>
+            </div>
+            <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+          </article>
+        </div>
+        <div class="pagination-footer">
+          <div class="show-select">
+            <span>Show 10</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <nav class="pagination">
+            <a href="#" class="page-link"><i class="fas fa-chevron-left"></i></a>
+            <a href="#" class="page-link active">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+            <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="newsletter-section">
+    <div class="container newsletter-container">
+      <h2>Subscribe on our newsletter</h2>
+      <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+      <form class="newsletter-form">
+        <div class="email-input-wrapper">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email">
+        </div>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-col brand-info">
+                <a href="home.html" class="logo-link">
+          <i class="fas fa-shopping-bag"></i>
+          <span>Brand</span>
+        </a>
+        <p>Best information about the company goes here but now lorem ipsum is</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Find store</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Partnership</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Find store</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Money Refund</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>For users</h4>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">My Orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get app</h4>
+        <div class="app-buttons">
+          <a href="#" class="app-button">
+            <i class="fab fa-apple"></i> App Store
+          </a>
+          <a href="#" class="app-button">
+            <i class="fab fa-google-play"></i> Google Play
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>© 2023 Ecommerce.</p>
+        <div class="language-selector">
+          <img src="https://via.placeholder.com/24x17" alt="US Flag">
+          <span>English</span>
+          <i class="fas fa-chevron-up"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+  <script>
+    document.getElementById('grid-view-button').addEventListener('click', function() {
+      document.getElementById('grid-view').style.display = 'grid';
+      document.getElementById('list-view').style.display = 'none';
+      this.classList.add('active');
+      document.getElementById('list-view-button').classList.remove('active');
+    });
+
+    document.getElementById('list-view-button').addEventListener('click', function() {
+      document.getElementById('grid-view').style.display = 'none';
+      document.getElementById('list-view').style.display = 'flex';
+      this.classList.add('active');
+      document.getElementById('grid-view-button').classList.remove('active');
+    });
+
+    function toggleSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      const overlay = document.querySelector('.sidebar-overlay');
+      const filterButton = document.querySelector('.filter-toggle-mobile');
+
+      sidebar.classList.toggle('active');
+      overlay.classList.toggle('active');
+
+      if (sidebar.classList.contains('active')) {
+        filterButton.innerHTML = '<i class="fas fa-times"></i> Close';
+      } else {
+        filterButton.innerHTML = '<i class="fas fa-filter"></i> Filters';
+      }
+    }
+
+    // Show/hide filter button on mobile
+    function checkScreenSize() {
+      const filterButton = document.querySelector('.filter-toggle-mobile');
+      if (window.innerWidth <= 768) {
+        filterButton.style.display = 'block';
+      } else {
+        filterButton.style.display = 'none';
+        document.querySelector('.sidebar').classList.remove('active');
+        document.querySelector('.sidebar-overlay').classList.remove('active');
+      }
+    }
+
+    window.addEventListener('resize', checkScreenSize);
+    checkScreenSize();
+  </script>
+</body>
+</html>

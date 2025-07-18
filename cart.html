@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Components/CSS/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="section-header">
+      <header class="site-header">
+        <div class="container header-container">
+          <a href="home.html" class="logo">
+            <div class="logo">
+              <img src="Components/Brand/logo-colored.svg" alt="" srcset="" />
+            </div>
+          </a>
+          <nav class="header-nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="far fa-user"></i>
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="far fa-comment-dots"></i>
+                  <span>Message</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-clipboard-list"></i>
+                  <span>Orders</span>
+                </a>
+              </li>
+              <li>
+                <a href="cart.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>My cart</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </section>
+    <main id="section-cart" class="cart-section">
+      <div class="container">
+        <h1 class="cart-title">My cart (3)</h1>
+        <div class="cart-layout">
+          <div class="cart-items-container card">
+            <div class="cart-items-list">
+              <article class="cart-item">
+                <div class="item-image-wrapper">
+                  <a href="details.html">
+                    <img
+                      src="Components/Image/cloth/1.jpg"
+                      alt="T-shirts with multiple colors"
+                      class="item-image"
+                    />
+                  </a>
+                </div>
+                <div class="item-details">
+                  <a href="details.html">
+                    <h2 class="item-title">
+                      T-shirts with multiple colors, for men and lady
+                    </h2>
+                  </a>
+                  <p class="item-specs">
+                    Size: medium, Color: blue, Material: Plastic
+                  </p>
+                  <p class="item-specs">Seller: Artel Market</p>
+                  <div class="item-actions">
+                    <button class="btn-text-danger">
+                      <i class="fas fa-trash-alt"></i> Remove
+                    </button>
+                    <button class="btn-text-primary">
+                      <i class="far fa-bookmark"></i> Save for later
+                    </button>
+                  </div>
+                </div>
+                <div class="item-pricing">
+                  <p class="item-price">$78.99</p>
+                  <div class="item-quantity">
+                    <span>Qty: 9</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+              </article>
+              <article class="cart-item">
+                <div class="item-image-wrapper">
+                  <img
+                    src="Components/Image/cloth/2.jpg"
+                    alt="T-shirts with multiple colors"
+                    class="item-image"
+                  />
+                </div>
+                <div class="item-details">
+                  <h2 class="item-title">
+                    T-shirts with multiple colors, for men and lady
+                  </h2>
+                  <p class="item-specs">
+                    Size: medium, Color: blue, Material: Plastic
+                  </p>
+                  <p class="item-specs">Seller: Best factory LLC</p>
+                  <div class="item-actions">
+                    <button class="btn-text-danger">
+                      <i class="fas fa-trash-alt"></i> Remove
+                    </button>
+                    <button class="btn-text-primary">
+                      <i class="far fa-bookmark"></i> Save for later
+                    </button>
+                  </div>
+                </div>
+                <div class="item-pricing">
+                  <p class="item-price">$39.00</p>
+                  <div class="item-quantity">
+                    <span>Qty: 3</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+              </article>
+              <article class="cart-item">
+                <div class="item-image-wrapper">
+                  <img
+                    src="Components/Image/cloth/3.jpg"
+                    alt="T-shirts with multiple colors"
+                    class="item-image"
+                  />
+                </div>
+                <div class="item-details">
+                  <h2 class="item-title">
+                    T-shirts with multiple colors, for men and lady
+                  </h2>
+                  <p class="item-specs">
+                    Size: medium, Color: blue, Material: Plastic
+                  </p>
+                  <p class="item-specs">Seller: Artel Market</p>
+                  <div class="item-actions">
+                    <button class="btn-text-danger">
+                      <i class="fas fa-trash-alt"></i> Remove
+                    </button>
+                    <button class="btn-text-primary">
+                      <i class="far fa-bookmark"></i> Save for later
+                    </button>
+                  </div>
+                </div>
+                <div class="item-pricing">
+                  <p class="item-price">$170.50</p>
+                  <div class="item-quantity">
+                    <span>Qty: 1</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="cart-footer-actions">
+              <a href="listAndgrid.html" class="btn btn-primary">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to shop</span>
+              </a>
+              <button class="btn btn-secondary">
+                <i class="fas fa-trash"></i> Remove all
+              </button>
+            </div>
+          </div>
+          <aside class="cart-sidebar">
+            <div class="coupon-card card">
+              <p class="coupon-title">
+                <i class="fas fa-tag"></i> Have a coupon?
+              </p>
+              <div class="coupon-input-group">
+                <input
+                  type="text"
+                  placeholder="Add coupon"
+                  class="coupon-input"
+                />
+                <button class="btn-text-primary coupon-apply">Apply</button>
+              </div>
+            </div>
+            <div class="summary-card card">
+              <div class="summary-row">
+                <span>Subtotal:</span>
+                <span>$1403.97</span>
+              </div>
+              <div class="summary-row">
+                <span>Discount:</span>
+                <span class="text-danger">- $60.00</span>
+              </div>
+              <div class="summary-row">
+                <span>Tax:</span>
+                <span class="text-success">+ $14.00</span>
+              </div>
+              <hr class="summary-divider" />
+              <div class="summary-total">
+                <span class="total-label">Total:</span>
+                <span class="total-price">$1357.97</span>
+              </div>
+              <button class="btn btn-success checkout-btn">
+                <i class="fas fa-lock"></i> Checkout
+              </button>
+              <div class="payment-methods">
+                <i class="fab fa-cc-amex" title="American Express"></i>
+                <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                <i class="fab fa-cc-paypal" title="Paypal"></i>
+                <i class="fab fa-cc-visa" title="Visa"></i>
+                <i class="fab fa-apple-pay" title="Apple Pay"></i>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <section id="section-features" class="features-section">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="feature-text">
+              <h3>Secure payment</h3>
+              <p>Have you ever finally just</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i class="fas fa-headset"></i>
+            </div>
+            <div class="feature-text">
+              <h3>Customer support</h3>
+              <p>Have you ever finally just</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i class="fas fa-truck"></i>
+            </div>
+            <div class="feature-text">
+              <h3>Free delivery</h3>
+              <p>Have you ever finally just</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-saved-for-later" class="saved-section">
+      <div class="container">
+        <div class="saved-card card">
+          <h2 class="saved-title">Saved for later</h2>
+          <div class="saved-grid">
+            <article class="product-card">
+              <a href="details.html">
+                <div class="product-image-container">
+                  <img
+                    src="Components/Image/cloth/1.jpg"
+                    alt="GoPro HERO6 4K Action Camera"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <p class="product-price">$99.50</p>
+                  <p class="product-name">
+                    GoPro HERO6 4K Action Camera - Black
+                  </p>
+                  <button class="btn btn-secondary product-action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Move to cart</span>
+                  </button>
+                </div>
+              </a>
+            </article>
+            <article class="product-card">
+              <div class="product-image-container">
+                <img
+                  src="Components/Image/cloth/2.jpg"
+                  alt="GoPro HERO6 4K Action Camera"
+                  class="product-image"
+                />
+              </div>
+              <div class="product-info">
+                <p class="product-price">$99.50</p>
+                <p class="product-name">GoPro HERO6 4K Action Camera - Black</p>
+                <button class="btn btn-secondary product-action-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Move to cart</span>
+                </button>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image-container">
+                <img
+                  src="Components/Image/cloth/4.jpg"
+                  alt="GoPro HERO6 4K Action Camera"
+                  class="product-image"
+                />
+              </div>
+              <div class="product-info">
+                <p class="product-price">$99.50</p>
+                <p class="product-name">GoPro HERO6 4K Action Camera - Black</p>
+                <button class="btn btn-secondary product-action-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Move to cart</span>
+                </button>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image-container">
+                <img
+                  src="Components/Image/cloth/5.jpg"
+                  alt="GoPro HERO6 4K Action Camera"
+                  class="product-image"
+                />
+              </div>
+              <div class="product-info">
+                <p class="product-price">$99.50</p>
+                <p class="product-name">GoPro HERO6 4K Action Camera - Black</p>
+                <button class="btn btn-secondary product-action-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Move to cart</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-discount-banner" class="discount-banner-section">
+      <div class="container">
+        <div class="discount-banner">
+          <div class="banner-content">
+            <h2 class="banner-title">Super discount on more than 100 USD</h2>
+            <p class="banner-description">
+              Have you ever finally just write dummy info
+            </p>
+          </div>
+          <a href="listAndgrid.html" class="btn btn-warning"
+            >Shop now <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <footer id="section-footer" class="site-footer">
+      <div class="footer-main">
+        <div class="container footer-grid">
+          <div class="footer-col about-col">
+            <a href="#" class="logo footer-logo">
+              <div class="logo-symbol">
+                <img
+                  style="width: 100px"
+                  src="Components/Brand/logo-colored.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <p class="footer-description">
+              Best information about the company gies here but now lorem ipsum
+              is
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col-title">About</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Find store</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col-title">Partnership</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Find store</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col-title">Information</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Money Refund</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col-title">For users</h3>
+            <ul>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">My Orders</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col-title">Get app</h3>
+            <div class="app-buttons">
+              <a href="#" class="app-store-btn">
+                <img src="Images/market-button-1.png" alt="" />
+              </a>
+              <a href="#" class="app-store-btn">
+                <img src="Images/market-button.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-container">
+          <p>© 2023 Ecommerce.</p>
+          <div class="language-selector">
+            <i class="fas fa-flag-usa"></i>
+            <span>English</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
